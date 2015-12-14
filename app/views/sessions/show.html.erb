@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="col-sm-6 col-sm-offset-6">
+  <div id="bla">
+    <p>I heard you wanna play a little game with me? So... Choose your destiny...</p>
+    <input type="radio" name="radio" id="option1" value="rock" onClick="validateDays();" /> Rock </br>
+    <input type="radio" name="radio" id="option2" value="paper" onClick="validateDays();" /> Paper </br>
+    <input type="radio" name="radio" id="option3" value="scissors" onClick="validateDays();" /> Scissors </br>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+  function validateDays() {
+      if (document.getElementById("option1").checked == true) {
+          var userChoice = "Rock";
+      }
+      else if (document.getElementById("option2").checked == true) {
+          var userChoice = "Paper";
+      }
+      else {
+          var userChoice = "Scissors";
+      } alert("You choose: " + userChoice + ";");
+    var computerChoice = Math.random();
+    if (computerChoice < 0.34) {
+        computerChoice = "Rock";
+    } else if(computerChoice <= 0.67) {
+        computerChoice = "Paper";
+    } else {
+        computerChoice = "Scissors";
+    } alert("I choose: " + computerChoice + ";");
+    var compare = function (userChoice, computerChoice) {
+        if (userChoice === computerChoice) {
+            return "Hm.. The result is a tie! Lets play again!";
+        }
+        else if(userChoice === "Rock") {
+                if (computerChoice === "Scissors") {
+                    return "You won! Now, run for yor life!";
+                }
+                else {
+                    return "I won! Well, I'll give you one more chance!";
+                }
+        }
+        else if(userChoice === "Paper") {
+                if (computerChoice === "Scissors") {
+                    return "I won! Well, I'll give you one more chance!";
+                }
+                else {
+                    return "You won! Now, run for yor life!";
+                }
+        }
+        else if(userChoice === "Scissors") {
+                if (computerChoice === "Rock") {
+                    return "I won! Well, I'll give you one more chance!";
+                }
+                else {
+                    return "You won! Now, run for yor life!";
+                }
+            }
+
+    }
+    alert(compare(userChoice, computerChoice))
+  }
+  </script>
+</div>

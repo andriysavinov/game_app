@@ -1,0 +1,187 @@
+@import "bootstrap";
+@import "bootstrap-sprockets";
+$lightBlue: #67D5DC;
+.navbar {
+  background-color: white;
+  margin-bottom: 0 !important;
+}
+header div span {
+  padding-left: 25px;
+  padding-right: 25px;
+  vertical-align: text-bottom;
+}
+nav span a {
+  color: black;
+  text-decoration: none;
+}
+#reg {
+  background-image: url('bgreg.jpg');
+  background-color: black;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#home {
+  background-image: url('knb2.jpg');
+  background-color: black;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+header {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    color: grey;
+    text-decoration: none;
+  }
+}
+h1 {
+  font-family: 'Lobster', "Times New Roman", serif;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+p {
+  font-family: "Times New Roman", serif;
+  text-align: center;
+}
+.container {
+  font-size: 1em;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+.row {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+.col-sm-5 {
+  display: inline-block;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+.col-sm-4 {
+  display: inline-block;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+#whiteText {color: white;}
+#greyText {
+  color: grey;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 48px}
+label {
+  color: grey;
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+label[for=user_sex] {
+  color: grey;
+  margin-left: -1%;
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+label[for=user_sex_male], label[for=user_sex_female] {
+  color: grey;
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+input[type='text'], input[type='email'], input[type='password'], input[type='number'],select {
+  color: grey;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+.btn {
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 2px;
+  width: 300px;
+  border-color: black;
+  background-color: grey;
+}
+#error_explanation {
+  color: #f00;
+  font-size: 20px;
+  ul {
+    list-style: none;
+  }
+}
+#bla {
+  text-align: left;
+  font-size: 30px;
+  font-family: "Times New Roman", serif;
+}
+#bla p {text-align: left;}
+
+.button1 {
+  border: none;
+  display: inline;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 7px;
+  background-color: #262626;
+  height: 6%;
+  width: 35%;
+  top: 47%;
+  right: 34%;
+}
+.button1:hover {
+  background-color: #191919;
+}
+#button1 {
+  font-size: 25px;
+  color: grey;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 2px;
+}
+.span6 label {
+  color: grey;
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+.span6 label[for=user_sex] {
+  color: grey;
+  margin-left: -1%;
+  display: inline-block;
+  width: 41%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+ .span6 label[for=user_sex_male], label[for=user_sex_female] {
+  color: grey;
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}
+ .span6 input[type='text'], input[type='email'], input[type='password'], input[type='number'],select {
+  color: grey;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}

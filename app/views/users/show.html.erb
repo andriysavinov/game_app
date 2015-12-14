@@ -1,0 +1,6 @@
+<div class="container">
+	<h1>Congratulations! <%= @user.name %> <%= @user.surname %></h1>
+	<p>If you want to play a game, please <%= link_to "Sign in", signin_path, method: "get" %></p>
+	
+	<%= link_to "Sign out", signout_path, method: "delete" %>
+</div>
