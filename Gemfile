@@ -17,9 +17,8 @@ gem 'turbolinks'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'rspec-rails', group: :test
-
-group :development do
+group :development, :test do
+  gem 'rspec-rails'
   gem 'sqlite3'
 end
 
