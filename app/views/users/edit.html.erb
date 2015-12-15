@@ -1,39 +1,40 @@
-<h1 id='whiteText'>Update your profile</h1>
+<div id='edit'>
+  <h1 id='whiteText'>Update your profile</h1>
+  <div class='row'>
+    <div class='span6 offset3'>
+      <%= form_for(@user) do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %></br>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %></br>
+        <%= f.label :surname, "Surname: #{@user.errors[:surname].join('')}" %>
+        <%= f.text_field :surname %></br>
 
-      <%= f.label :surname, "Surname: #{@user.errors[:surname].join('')}" %>
-      <%= f.text_field :surname %></br>
+        <%= f.label :age, 'Age:' %>
+        <%= f.number_field :age, in: 1.0..100.0, step: 1.0 %></br>
 
-      <%= f.label :age, "Age:" %>
-      <%= f.number_field :age, in: 1.0..100.0, step: 1.0 %></br>
+        <%= f.label :email %>
+        <%= f.text_field :email %></br>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %></br>
+        <%= f.label :password %>
+        <%= f.password_field :password %></br>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %></br>
+        <%= f.label :password_confirmation, 'Confirm Password' %>
+        <%= f.password_field :password_confirmation %></br>
 
-      <%= f.label :password_confirmation, "Confirm Password" %>
-      <%= f.password_field :password_confirmation %></br>
+        <%= f.label :sex, 'Sex:' %>
+        <%= f.radio_button(:sex, 'male') %>
+        <%= f.label(:sex_male, 'Male') %>
+        <%= f.radio_button(:sex, 'female') %>
+        <%= f.label(:sex_female, 'Female') %></br>
 
-      <%= f.label :sex, "Sex:" %>
-      <%= f.radio_button(:sex, "male") %>
-      <%= f.label(:sex_male, "Male") %>
-      <%= f.radio_button(:sex, "female") %>
-      <%= f.label(:sex_female, "Female") %></br>
+        <%= f.label :phone, 'Phone number:' %>
+        <%= f.text_field :phone %></br>
 
-      <%= f.label :phone, "Phone number:" %>
-      <%= f.text_field :phone %></br>
-
-      <%= f.label :status, "Status:" %>
-      <%= f.select :status, [["I'm sexy and I know it",'sexy'],['Married','married'],['Single','single'],["Don't know how it calls",'dont']] %><br>
-</br>
-      <%= f.submit "Save changes", class: "btn" %>
-    <% end %>
+        <%= f.label :status, 'Status:' %>
+        <%= f.select :status, [["I'm sexy and I know it",'sexy'],['Married','married'],['Single','single'],['Have a friend','friend']] %><br>
+  </br>
+        <%= f.submit 'Save changes', class: 'btn' %>
+      <% end %>
+    </div>
   </div>
 </div>

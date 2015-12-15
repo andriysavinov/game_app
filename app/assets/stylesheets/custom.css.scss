@@ -1,9 +1,14 @@
-@import "bootstrap";
-@import "bootstrap-sprockets";
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
 $lightBlue: #67D5DC;
-.navbar {
-  background-color: white;
-  margin-bottom: 0 !important;
+header {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    color: grey;
+    text-decoration: none;
+  }
 }
 header div span {
   padding-left: 25px;
@@ -14,81 +19,16 @@ nav span a {
   color: black;
   text-decoration: none;
 }
-#reg {
-  background-image: url('bgreg.jpg');
-  background-color: black;
-  min-height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 50;
-  left: 0;
-}
-#home {
-  background-image: url('knb2.jpg');
-  background-color: black;
-  min-height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 50;
-  left: 0;
-}
-header {
-  font-size: 1.7em;
-  text-transform: uppercase;
-  font-weight: bold;
-  &:hover {
-    color: grey;
-    text-decoration: none;
-  }
-}
-h1 {
-  font-family: 'Lobster', "Times New Roman", serif;
+h1, h3, p {
+  font-family: 'Times New Roman', serif;
   text-align: center;
 }
-h3 {
-  text-align: center;
-  font-family: "Times New Roman", serif;
-}
-p {
-  font-family: "Times New Roman", serif;
-  text-align: center;
-}
-.container {
-  font-size: 1em;
-  text-align: center;
-  font-family: "Times New Roman", serif;
-}
-.row {
-  text-align: center;
-  font-family: "Times New Roman", serif;
-}
-.col-sm-5 {
-  display: inline-block;
-  text-align: center;
-  font-family: "Times New Roman", serif;
-}
-.col-sm-4 {
-  display: inline-block;
-  text-align: center;
-  font-family: "Times New Roman", serif;
-}
-#whiteText {color: white;}
-#greyText {
-  color: grey;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 48px}
 label {
   color: grey;
   display: inline-block;
   width: 35%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 label[for=user_sex] {
   color: grey;
@@ -96,44 +36,45 @@ label[for=user_sex] {
   display: inline-block;
   width: 35%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 label[for=user_sex_male], label[for=user_sex_female] {
   color: grey;
   display: inline-block;
   width: 20%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 input[type='text'], input[type='email'], input[type='password'], input[type='number'],select {
   color: grey;
   display: inline-block;
   width: 50%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
-.btn {
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 2px;
-  width: 300px;
-  border-color: black;
-  background-color: grey;
+.navbar {
+  background-color: white;
+  margin-bottom: 0 !important;
 }
-#error_explanation {
-  color: #f00;
-  font-size: 20px;
-  ul {
-    list-style: none;
-  }
+.container {
+  font-size: 1em;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
 }
-#bla {
-  text-align: left;
-  font-size: 30px;
-  font-family: "Times New Roman", serif;
+.row {
+  text-align: center;
+  font-family: 'Times New Roman', serif;
 }
-#bla p {text-align: left;}
-
+.col-sm-5 {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
+.col-sm-4 {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
 .button1 {
   border: none;
   display: inline;
@@ -149,39 +90,152 @@ input[type='text'], input[type='email'], input[type='password'], input[type='num
 .button1:hover {
   background-color: #191919;
 }
-#button1 {
-  font-size: 25px;
-  color: grey;
-  font-weight: bold;
-  font-family: "Times New Roman", serif;
-  letter-spacing: 2px;
+.btn {
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 2px;
+  width: 300px;
+  border-color: black;
+  background-color: grey;
 }
 .span6 label {
-  color: grey;
+  color: white;
   display: inline-block;
   width: 35%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 .span6 label[for=user_sex] {
-  color: grey;
+  color: white;
   margin-left: -1%;
   display: inline-block;
   width: 41%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
  .span6 label[for=user_sex_male], label[for=user_sex_female] {
-  color: grey;
+  color: white;
   display: inline-block;
   width: 20%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
  .span6 input[type='text'], input[type='email'], input[type='password'], input[type='number'],select {
   color: grey;
   display: inline-block;
   width: 50%;
   text-align: left;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
+}
+#gamebg {
+  background-image: url('http://2.firepic.org/2/images/2015-12/14/ylquo95sj6gy.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#fail {
+  background-image: url('http://2.firepic.org/2/images/2015-12/14/27sxdhvfszg9.jpg');
+  min-height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#rule, #edit, #user {
+  background-image: url('http://2.firepic.org/2/images/2015-12/14/cj72hkxq7dsj.jpg');
+  min-height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#reg {
+  background-image: url('http://2.firepic.org/2/images/2015-12/14/w6dk3o6h42ui.jpg');
+  background-color: black;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#home {
+  background-image: url('http://2.firepic.org/2/images/2015-12/14/dlbyoxlk2vcf.jpg');
+  background-color: black;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50;
+  left: 0;
+}
+#whiteText {color: white;}
+#greyText {
+  color: grey;
+  font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+  font-size: 48px;
+}
+#ruleText {
+  font-weight: bold;
+  color: white;
+  font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+  font-size: 48px;
+}
+#error_explanation {
+  color: #f00;
+  font-size: 20px;
+  ul {
+    list-style: none;
+  }
+}
+#game {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Times New Roman', serif;
+}
+#game p {text-align: left;}
+#button1 {
+  font-size: 25px;
+  color: grey;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 2px;
+}
+#radioWhite {color: grey;
+  font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+  font-size: 32px;
+}
+#game input[type=radio] {
+    display:none;
+    margin:10px;
+}
+#game input[type=radio] + label {
+  display:inline-block;
+  width: 150px;
+  text-align: center;
+  margin:-2px;
+  padding: 4px 12px;
+  background-color: #e7e7e7;
+  border: 4px outset grey;
+  &:hover {
+  color: #c53333;
+  text-decoration: none;
+  border: 4px inset black;
+  }
+  &:checked {
+  background-image: none;
+  background-color: #e7e7e7;
+  }
 }

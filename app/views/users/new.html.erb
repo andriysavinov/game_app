@@ -1,45 +1,45 @@
-<div class="container" id="reg">
-  <div class="row">
-    <div class="col-sm-5 col-sm-offset-1">
-      <h1 id="whiteText">New User Registration</h1>
+<div class='container' id='reg'>
+  <div class='row'>
+    <div class='col-sm-5 col-sm-offset-1'>
+      <h1 id='whiteText'>New User Registration</h1>
       <%= form_for(@user) do |f|%>
         <%= f.label :name, "Name: #{@user.errors[:name].join('')}" %>
         <%= f.text_field :name %><br>
         <%= f.label :surname, "Surname: #{@user.errors[:surname].join('')}" %>
         <%= f.text_field :surname %><br>
-        <%= f.label :age, "Age:" %>
+        <%= f.label :age, 'Age:' %>
         <%= f.number_field :age, in: 1.0..100.0, step: 1.0 %><br>
-        <%= f.label :email, "Email:" %>
+        <%= f.label :email, 'Email:' %>
         <%= f.email_field :email %><br>
-        <%= f.label :password, "Password:" %>
+        <%= f.label :password, 'Password:' %>
         <%= f.password_field :password %><br>
-        <%= f.label :password_confirmation, "Password Confirmation:" %>
+        <%= f.label :password_confirmation, 'Password Confirmation:' %>
         <%= f.password_field :password_confirmation %><br>
-        <%= f.label :sex, "Sex:" %>
-        <%= f.radio_button(:sex, "male") %>
-        <%= f.label(:sex_male, "Male") %>
-        <%= f.radio_button(:sex, "female") %>
-        <%= f.label(:sex_female, "Female") %><br>
-        <%= f.label :phone, "Phone number:" %>
+        <%= f.label :sex, 'Sex:' %>
+        <%= f.radio_button(:sex, 'male') %>
+        <%= f.label(:sex_male, 'Male') %>
+        <%= f.radio_button(:sex, 'female') %>
+        <%= f.label(:sex_female, 'Female') %><br>
+        <%= f.label :phone, 'Phone number:' %>
         <%= f.text_field :phone %><br>
-        <%= f.label :status, "Status:" %>
-        <%= f.select :status, [["I'm sexy and I know it",'sexy'],['Married','married'],['Single','single'],["Don't know how it calls",'dont']] %><br>
+        <%= f.label :status, 'Status:' %>
+        <%= f.select :status, [["I'm sexy and I know it",'sexy'],['Married','married'],['Single','single'],["Have a friend",'friend']] %><br>
         </br>
-      <%= f.submit "Create my account", class:'btn' %>
+      <%= f.submit 'Create my account', class:'btn' %>
       <% end %>
       </div>
-    <div class="col-sm-4">
-    <h1 id="whiteText">Sign in</h1>
+    <div class='col-sm-4'>
+    <h1 id='whiteText'>Sign in</h1>
       <%= form_for(:session, url: sessions_path) do |f| %>
         <%= f.label :email %>
         <%= f.text_field :email %><br>
         <%= f.label :password %>
         <%= f.password_field :password %><br>
         </br>
-        <%= f.submit "Sign in", class:'btn'%><br>
+        <%= f.submit 'Sign in', class:'btn'%><br>
       <% end %>
     </div>
-    <div class="col-sm-2">
+    <div class='col-sm-2'>
     </div>
   </div>
 </div>

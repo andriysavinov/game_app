@@ -34,14 +34,9 @@ class UsersController < ApplicationController
   def user_params
   	params.require(:user).permit(:name, :surname, :age, :email, :password, :password_confirmation, :sex, :phone, :status)
   end
-end
-
-def signed_in_user
-  unless signed_in?
-    redirect_to signin_url, notice: 'Please sign in.'
+  def signed_in_user
+    unless signed_in?
+      redirect_to signin_url, notice: 'Please sign in.'
+    end
   end
-end
-def correct_user
-  @user = User.find(params[:id])
-  redirect_to(root_url) unless current_user?(@user)
 end

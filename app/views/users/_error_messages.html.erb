@@ -1,19 +1,21 @@
-<div class="container">
-  <h2>Registration failed</h2>
-  <h3>Smthng wrng...</h3>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <div class="alert alert-error">
-        The form contains <%= pluralize(@user.errors.count, "error") %>.
+<div id='fail'>
+  <div class='container'>
+    <h2>Registration failed</h2>
+    <h3>Smthng wrng...</h3>
+    <% if @user.errors.any? %>
+      <div id='error_explanation'>
+        <div class='alert alert-error'>
+          The form contains <%= pluralize(@user.errors.count, 'error') %>.
+        </div>
+        <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li>* <%= msg %></li>
+        <% end %>
+        </ul>
       </div>
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li>* <%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <h3>Try again=)</h3>
-  <h3>||</br>||</br>||</br>V</br></h3>
-  <a href="/signup"><h3>Sign up again</h3></a>
+    <% end %>
+    <h3>Try again=)</h3>
+    <h4>||</br>||</br>||</br>V</br></h4>
+    <a href='/signup'><h3>Sign up again</h3></a>
+  </div>
 </div>
